@@ -20,3 +20,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Check Secret
         run: echo ${{secrets.NAME}}
+
+      # Runs a single command using the runners shell
+      - name: Check Secret
+        run: echo ${{secrets.NAME2}}
