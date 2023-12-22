@@ -19,6 +19,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Check Secret
-        run: echo "$NAME event."
+        run: echo $NAME
         env:
           NAME: ${{secrets.NAME}}
