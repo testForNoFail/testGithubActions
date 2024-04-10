@@ -38,8 +38,7 @@ jobs:
     - name: Build with Gradle 8.5
       run: gradle build
 
-    - run: mkdir staging && cp build/libs/*.jar staging
     - uses: actions/upload-artifact@v4
       with:
-        name: Package
-        path: staging
+        name: JarFile
+        path: build/libs
